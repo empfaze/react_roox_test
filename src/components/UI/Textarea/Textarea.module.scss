@@ -9,11 +9,11 @@
     display: block;
     border-radius: 0.5rem;
     border: 1px solid #d8d8d8;
-    font-size: 1rem;
+    font-size: 1.6rem;
     padding: 0.5rem 1rem;
     background-color: transparent;
     outline: none;
-    min-height: 5.5rem;
+    min-height: 9.5rem;
     height: auto;
 
     &:disabled {
@@ -22,7 +22,8 @@
   }
 
   & label {
-    margin-bottom: 3px;
-    padding-left: 1.1rem;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1.6rem;
   }
 }

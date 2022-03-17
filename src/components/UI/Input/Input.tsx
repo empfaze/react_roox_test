@@ -78,9 +78,9 @@ export const Input: FC<InputProps> = ({
 
   return (
     <div className={classes["input-wrapper"]}>
-      <label htmlFor={type}>{labelName}</label>
+      <label htmlFor={type.toLowerCase()}>{labelName}</label>
       <input
-        id={type}
+        id={type.toLowerCase()}
         value={value}
         disabled={!editContext?.isEditing}
         className={inputClass}
