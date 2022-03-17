@@ -1,4 +1,4 @@
-import { FC, useEffect, useRef, useState } from "react";
+import { FC, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Form } from "../../components/Form/Form";
 import { ProfileHeader } from "../../components/ProfileHeader/ProfileHeader";
@@ -11,15 +11,18 @@ import classes from "./UserProfile.module.scss";
 interface UserProfileProps {
   users: IUser[];
   isLoading: boolean;
+  error: null | string;
 }
 
-export const UserProfile: FC<UserProfileProps> = ({ users, isLoading }) => {
+export const UserProfile: FC<UserProfileProps> = ({
+  users,
+  isLoading,
+  error,
+}) => {
   const [isEditing, setIsEditing] = useState<boolean>(false);
   const params = useParams();
 
-  const user = users.find(
-    (user) => user.id === Number(params.id)
-  );
+  const user = users.find((user) => user.id === Number(params.id));
 
   function editHandler() {
     isEditing ? setIsEditing(false) : setIsEditing(true);
@@ -36,7 +39,13 @@ export const UserProfile: FC<UserProfileProps> = ({ users, isLoading }) => {
         <div className={classes["form-wrapper"]}>
           <ProfileHeader />
           {isLoading && <Spinner />}
-          { !isLoading && user && <Form user={user} />}
+          {error && (
+            <p className={classes["error-para"]}>
+              Ошибка при загрузке данных с сервера...Пожалуйста, повторите
+              попытку позже.
+            </p>
+          )}
+          {!isLoading && user && <Form user={user} />}
         </div>
       </EditContext.Provider>
     </section>

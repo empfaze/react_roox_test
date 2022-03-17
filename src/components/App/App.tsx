@@ -59,7 +59,7 @@ export const App = () => {
           <Route
             path={profile.path}
             key={profile.name}
-            element={<profile.component users={users} isLoading={isLoading}/>}
+            element={<profile.component users={users} isLoading={isLoading} error={error}/>}
           />
         </Routes>
       </SortContext.Provider>

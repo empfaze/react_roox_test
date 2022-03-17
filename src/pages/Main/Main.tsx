@@ -19,8 +19,8 @@ export const Main: FC<MainProps> = ({ error, isLoading, users }) => {
       <main className={classes["main"]}>
         <h1 className={classes["heading-primary"]}>Список пользователей:</h1>
         {!error && isLoading && <Spinner />}
-        {error && !isLoading && error}
-        {users.length && <UserList users={users} />}
+        {error && !isLoading && <p className={classes["error-para"]}>Ошибка при загрузке данных с сервера...Пожалуйста, повторите попытку позже.</p>}
+        {users.length > 0 && <UserList users={users} />}
       </main>
     </div>
   );
