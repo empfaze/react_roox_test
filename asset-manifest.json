@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/roox-test/static/css/main.cc3408c9.css",
-    "main.js": "/roox-test/static/js/main.490dd749.js",
+    "main.css": "/roox-test/static/css/main.f981d892.css",
+    "main.js": "/roox-test/static/js/main.c0a219f8.js",
     "static/media/Roboto-Regular.woff2": "/roox-test/static/media/Roboto-Regular.25904b64cf300c2a6395.woff2",
     "static/media/Roboto-Bold.woff2": "/roox-test/static/media/Roboto-Bold.fe2afa933cd6e66b79d4.woff2",
     "static/media/Roboto-Bold.woff": "/roox-test/static/media/Roboto-Bold.2ddbea4806c184d186fa.woff",
     "static/media/Roboto-Regular.woff": "/roox-test/static/media/Roboto-Regular.d255c3ec15fbb3290d50.woff",
     "index.html": "/roox-test/index.html",
-    "main.cc3408c9.css.map": "/roox-test/static/css/main.cc3408c9.css.map",
-    "main.490dd749.js.map": "/roox-test/static/js/main.490dd749.js.map"
+    "main.f981d892.css.map": "/roox-test/static/css/main.f981d892.css.map",
+    "main.c0a219f8.js.map": "/roox-test/static/js/main.c0a219f8.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc3408c9.css",
-    "static/js/main.490dd749.js"
+    "static/css/main.f981d892.css",
+    "static/js/main.c0a219f8.js"
   ]
 }
