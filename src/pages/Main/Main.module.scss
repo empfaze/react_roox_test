@@ -1,0 +1,26 @@
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+
+  max-width: 66.5rem;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  margin: 0 auto;
+}
+
+.main {
+  flex: 1 1 auto;
+  padding: 2rem 1.5rem;
+  background-color: #ffffff;
+}
+
+.heading-primary {
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  width: 100%;
+  max-width: 42rem;
+  margin: 0 auto 1.6rem;
+  padding-left: 0.8rem;
+}

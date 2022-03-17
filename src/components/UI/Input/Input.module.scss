@@ -1,0 +1,37 @@
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-of-type) {
+    margin-bottom: 1rem;
+  }
+
+  & input {
+    display: inline-block;
+    width: 100%;
+    max-width: 28.2rem;
+
+    border-radius: 0.5rem;
+    border: 1px solid #d8d8d8;
+    background-color: transparent;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    outline: none;
+    transition: all 0.2s ease-out;
+
+    &.invalid {
+      border: 1px solid #d91313;
+    }
+
+    &:disabled {
+      color: rgba(#000000, 0.3);
+      border: 1px solid #d8d8d8;
+    }
+  }
+
+  & label {
+    font-size: 1rem;
+    margin-bottom: 3px;
+    padding-left: 1.1rem;
+  }
+}

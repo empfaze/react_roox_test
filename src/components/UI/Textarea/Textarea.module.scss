@@ -1,0 +1,28 @@
+.textarea-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+
+  & textarea {
+    max-width: 100%;
+    min-width: 100%;
+    display: block;
+    border-radius: 0.5rem;
+    border: 1px solid #d8d8d8;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    outline: none;
+    min-height: 5.5rem;
+    height: auto;
+
+    &:disabled {
+      color: rgba(#000000, 0.3);
+    }
+  }
+
+  & label {
+    margin-bottom: 3px;
+    padding-left: 1.1rem;
+  }
+}

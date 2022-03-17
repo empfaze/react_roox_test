@@ -1,0 +1,11 @@
+.sidebar-wrapper {
+  background-color: #bdbdbd;
+  padding: 3.5rem 2rem;
+
+  flex: 0 0 15.2rem;
+
+  @media (max-width: 28.125em) {
+    padding: 3.5rem 1rem;
+    flex: 0 0 13.2rem;
+  }
+}

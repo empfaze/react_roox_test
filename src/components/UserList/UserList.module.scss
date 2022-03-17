@@ -1,0 +1,26 @@
+.userlist-wrapper {
+  width: 100%;
+  max-width: 42rem;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.userlist {
+  width: 100%;
+
+  &__count {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    align-self: flex-end;
+
+    @media (max-width: 28.125em) {
+      align-self: flex-start;
+    }
+  }
+}
+
+.empty-para {
+  font-size: 2rem;
+}

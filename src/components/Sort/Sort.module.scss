@@ -1,0 +1,12 @@
+.sort {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: start;
+  grid-row-gap: 1rem;
+
+  &__title {
+    font-size: 1.2rem;
+  }
+}
