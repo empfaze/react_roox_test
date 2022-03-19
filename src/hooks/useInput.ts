@@ -15,7 +15,7 @@ export const useInput = (
   ): IValue {
     switch (action.type) {
       case InputActionTypes.CHANGE:
-        return { value: action.payload!, isTouched: state.isTouched };
+        return { value: action.payload!, isTouched: true };
       case InputActionTypes.BLUR:
         return { value: state.value, isTouched: true };
       default:

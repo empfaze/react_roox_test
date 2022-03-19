@@ -70,8 +70,7 @@ export const Input: FC<InputProps> = ({
     getInputData({ isValid: valueIsValid, value }, type);
   }, [valueIsValid, value]);
 
-  const inputClass: string =
-    hasError || !valueIsValid ? `${classes["invalid"]}` : "";
+  const inputClass: string = hasError ? `${classes["invalid"]}` : "";
   const labelName: string = `${type.charAt(0)}${type.toLowerCase().slice(1)}`;
 
   const inputType = getInputType(type);
